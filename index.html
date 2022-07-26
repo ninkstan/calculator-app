@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container1">
+        <label for="">123</label>
+        <h1>calc</h1>
+        <div class="theme">
+          <p class="">THEME</p>
+          <div class="toggle">
+            <div id="toggle-1"></div>
+            <div id="toggle-2"></div>
+            <div id="toggle-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="container2">
+          <input class="display" type="text" readonly />
+        </div>
+
+        <div class="calculator">
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='7'"
+          >
+            7
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='8'"
+          >
+            8
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='9'"
+          >
+            9
+          </button>
+          <button class="delete" onclick="del()">DEL</button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='4'"
+          >
+            4
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='5'"
+          >
+            5
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='6'"
+          >
+            6
+          </button>
+          <button
+            class="operation"
+            onclick="document.querySelector('.display').value+='+'"
+          >
+            +
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='1'"
+          >
+            1
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='2'"
+          >
+            2
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='3'"
+          >
+            3
+          </button>
+          <button
+            class="operation"
+            onclick="document.querySelector('.display').value+='-'"
+          >
+            -
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='.'"
+          >
+            .
+          </button>
+          <button
+            class="number"
+            onclick="document.querySelector('.display').value+='0'"
+          >
+            0
+          </button>
+          <button
+            class="operation"
+            onclick="document.querySelector('.display').value+='/'"
+          >
+            /
+          </button>
+          <button
+            class="operation"
+            onclick="document.querySelector('.display').value+='*'"
+          >
+            x
+          </button>
+          <button class="reset" onclick="reset()">RESET</button>
+          <button
+            class="sum"
+            onclick="document.querySelector('.display').value=eval(document.querySelector('.display').value)"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

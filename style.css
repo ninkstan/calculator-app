@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan',sans-serif;
+    font-weight: 700;
+}
+
+main {
+    width: 25.5rem;
+    margin: 1rem auto;
+    display: block;
+    justify-content: center;
+}
+.theme {
+    display: flex;
+    justify-content: right;
+    transform: translateY(-1rem)
+}
+h1 {
+    font-size: 2.4rem;
+    padding-top: 1rem;
+}
+p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+label {
+    font-size: 1rem;
+    letter-spacing: 1.5rem;
+    float: right;
+    transform: translate(0.8rem, 0.5rem);
+}
+.display {
+    width: 24.55rem;
+    height: 7rem;
+    border: none;
+    border-radius: 0.8rem;
+    font-size: 2.4rem;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+    
+} 
+.calculator {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 5rem 5rem 5rem 5rem;
+    gap: 1rem;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem;
+    width: 21.5rem;
+}
+button {
+    border: none;
+    border-radius: 0.5rem;
+    height: 4.7rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.delete {
+    font-size: 1.5rem;
+}
+.reset {
+    font-size: 1.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.sum {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.toggle {
+    border-radius: 2rem;
+    transform: translateY(-0.7rem);
+    margin-left: 1rem;
+    width: 6rem;
+    height: 2rem;
+}
+input[type="checkbox"]:before {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+}
+
+/* toggle */
+
+.toggle {
+    display: flex;
+}
+.toggle-1 {
+    cursor: pointer;
+    background-color: hsl(6, 63%, 50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.25rem 0 0 0.4rem;
+}
+.toggle-2 {
+    cursor: pointer;
+    background-color: hsl(223, 31%, 20%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.25rem 0 0 0.4rem;
+}
+.toggle-3 {
+    cursor: pointer;
+    background-color: hsl(223, 31%, 20%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin: 0.25rem 0 0 0.4rem;
+}
+
+/* theme1 */
+.theme1 {
+    background-color: hsl(222, 26%, 31%);
+}
+.theme1 .bg {
+    background-color: hsl(222, 26%, 31%);
+}
+.theme1 h1 {
+    color: hsl(224, 36%, 15%);
+}
+.theme1 p {
+    color: hsl(224, 36%, 15%);
+}
+.theme1 label {
+    color: hsl(224, 36%, 15%);
+}
+.theme1 .display {
+    color: white;
+    background-color: hsl(224, 36%, 15%);
+}
+.theme1 .calculator {
+    background-color: hsl(223, 31%, 20%);
+}
+.theme1 button {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 0.3rem 0 hsl(28, 16%, 65%);
+}
+.theme1 .delete {
+    color: white;
+    background-color: hsl(222, 26%, 31%);
+    box-shadow: 0 0.3rem 0 hsl(224, 28%, 35%);
+}
+.theme1 .reset {
+    color: white;
+    background-color: hsl(222, 26%, 31%);
+    box-shadow: 0 0.3rem 0 hsl(224, 28%, 35%);
+}
+.theme1 .sum {
+    color: white;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 0.3rem 0 hsl(6, 70%, 34%);
+}
+.theme1 button:active {
+    background-color: white;
+}
+.theme1 .delete:active {
+    background-color: hsl(226, 26%, 63%);
+}
+.theme1 .reset:active {
+    background-color: hsl(226, 26%, 63%);
+}
+.theme1 .sum:active {
+    background-color: hsl(6, 70%, 58%);
+}
+.theme1 .toggle {
+    background-color: hsl(223, 31%, 20%);
+}
+.theme1 .number {
+    color: hsl(223, 31%, 20%);
+}
+.theme1 .operation {
+    color: hsl(223, 31%, 20%);
+}
+
+/* theme2 */
+.theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+.theme2 .bg {
+    background-color: hsl(0, 0%, 90%);
+}
+.theme2 h1 {
+    color: hsl(60, 10%, 19%);
+}
+.theme2 p {
+    color: hsl(60, 10%, 19%);
+}
+.theme2 label {
+    color: hsl(60, 10%, 19%);
+}
+.theme2 .display {
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(0, 0%, 96%);
+}
+.theme2 .calculator {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme2 button {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 0.3rem 0 hsl(35, 11%, 61%);
+}
+.theme2 .delete {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 0.3rem 0 hsl(185, 58%, 25%);
+}
+.theme2 .reset {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 0.3rem 0 hsl(185, 58%, 25%);
+}
+.theme2 .sum {
+    color: white;
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 0.3rem 0 hsl(25, 99%, 27%);
+}
+.theme2 button:active {
+    background-color: hsl(48, 17%, 94%);
+}
+.theme2 .delete:active {
+    background-color: hsl(185, 36%, 45%);
+}
+.theme2 .reset:active {
+    background-color: hsl(185, 36%, 45%);
+}
+.theme2 .sum:active {
+    background-color: hsl(25, 84%, 47%);
+}
+.theme2 .toggle {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme2 .number{
+    color: hsl(60, 10%, 19%);
+}
+.theme2 .operation {
+    color: hsl(60, 10%, 19%);
+}
+
+/* theme3 */
+.theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+.theme3 .bg {
+    background-color: hsl(268, 75%, 9%);
+}
+.theme3 h1 {
+    color: hsl(52, 100%, 62%);
+}
+.theme3 p {
+    color: hsl(52, 100%, 62%);
+}
+.theme3 label {
+    color: hsl(52, 100%, 62%);
+}
+.theme3 .display {
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 71%, 12%);
+}
+.theme3 .calculator {
+    background-color: hsl(268, 71%, 12%);
+}
+.theme3 button {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 0.3rem 0 hsl(290, 70%, 36%);
+}
+.theme3 .delete {
+    color: white;
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 0.3rem 0 hsl(285, 91%, 52%);
+}
+.theme3 .reset {
+    color: white;
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 0.3rem 0 hsl(285, 91%, 52%);
+}
+.theme3 .sum {
+    color: hsl(198, 20%, 13%);
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 0.3rem 0 hsl(177, 92%, 70%);
+}
+.theme3 button:active {
+    background-color: hsl(268, 44%, 28%);
+}
+.theme3 .delete:active {
+    background-color: hsl(281, 86%, 29%);
+}
+.theme3 .reset:active {
+    background-color: hsl(281, 86%, 29%);
+}
+.theme3 .sum:active {
+    background-color: hsl(176, 80%, 60%);
+}
+.theme3 .toggle {
+    background-color: hsl(268, 71%, 12%);
+}
+.theme3 .number {
+    color: hsl(52, 100%, 62%);
+}
+.theme3 .operation {
+    color: hsl(52, 100%, 62%);
+}
+
